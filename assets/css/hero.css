@@ -1,0 +1,195 @@
+#hero {
+    height: 100vh;
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-black);
+}
+
+#hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#hero .container .hero_left {
+    height: 400px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+#hero .container .hero_right {
+    width: 45%;
+}
+
+.hero_left .hero_welcome {
+    font-family: var(--font-barlow);
+    font-size: 2rem;
+    color: var(--color-gray);
+    
+}
+
+.hero_left .hero_name {
+    font-family: var(--font-barlow);
+    font-size: 5rem;
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.hero_left .hero_subname {
+    font-family: var(--font-itim);
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.hero_left .hero_paragraph {
+    font-family: var(--font-lato);
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+.hero_left .hero_buttons {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_left .hero_buttons #contact_btn {
+    background-color: var(--color-red);
+    padding: 1.5rem 3rem;
+    border-radius: var(--border-radius);
+    color: var(--color-light-yellow);
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.hero_left .hero_buttons #contact_btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/********** RESPONSIVENESS STYLE *************/
+
+@media (max-width: 1669px) {
+    #hero .container .hero_right {
+        width: 35%;
+    }
+
+    .hero_left .hero_welcome {
+        font-size: 2rem;
+    }
+
+    .hero_left .hero_name {
+        font-size: 4.5rem;
+    }
+
+    .hero_left .hero_subname {
+        font-size: 2.5rem;
+    }
+
+    .hero_left .hero_paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .hero_left .hero_buttons #contact_btn {
+        padding: 1rem 2rem;
+    }
+
+    .hero_left .hero_welcome {
+        font-size: 1.7rem;
+    }
+
+    .hero_left .hero_name {
+        font-size: 3.9rem;
+    }
+
+    .hero_left .hero_subname {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 1210px) {
+    .hero_left .hero_name {
+        font-size: 3.9rem;
+    }
+
+}
+
+@media (max-width: 992px) { /********* TABLET *********/
+    #hero .container .hero_left {
+        width: 75%;
+        padding: 3rem;
+    }
+
+    #hero .container .hero_right {
+       display: none;
+    }
+
+    .hero_left .hero_name {
+        font-size: 4rem;
+    }
+
+    .hero_left .hero_subname {
+        font-size: 2rem;
+    }
+
+    .hero_left .hero_paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 694px) { 
+    #hero .container {
+        justify-content: center;
+    }
+
+    .hero_left .hero_name {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) { /********* PHONE *********/
+    #hero .container .hero_left {
+        margin-top: 3rem;
+        align-items: flex-start;
+        padding: 0rem;
+    }
+
+    .hero_left .hero_welcome {
+        font-size: 1.3rem;
+    }
+
+    .hero_left .hero_name {
+        font-size: 3rem;
+    }
+
+    .hero_left .hero_subname {
+        font-size: 1.5rem;
+    }
+
+    .hero_left .hero_paragraph {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .hero_left .hero_buttons {
+        margin-top: 2rem;
+    }
+
+    .hero_left .hero_buttons #contact_btn {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,197 @@
+@import url("styles.css");
+
+#about {
+    height: 100%;
+    background-image: url(../images/about-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#about .container .title {
+    color: var(--color-black);
+    font-family: var(--font-barlow);
+    font-size: 4rem;
+    margin: 4rem 0 0 0;
+}
+
+#about .container .about_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.about_leftDiv {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about_leftDiv img {
+    width: 650px;
+    height: 700px;
+}
+
+.about_rightDiv {
+    width: 45%;
+    padding: 0 2rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about_rightDiv .about_title {
+    font-family: var(--font-barlow);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.about_rightDiv .about_subtitle {
+    font-family: var(--font-barlow);
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about_rightDiv .content {
+    font-family: var(--font-lato);
+    font-size: 1.2rem;
+}
+
+.about_rightDiv .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about_rightDiv .button a {
+    background-color: var(--color-red);
+    padding: 1.5rem 3rem;
+    border-radius: var(--border-radius);
+    color: var(--color-light-yellow);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.about_rightDiv .button a:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/********** RESPONSIVENESS STYLE *************/
+
+@media (max-width: 1669px) {
+    .about_leftDiv img {
+        width: 500px;
+        height: 550px;
+    }
+
+    .about_rightDiv .about_title {
+        font-size: 3rem;
+    }
+
+    .about_rightDiv .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .content {
+        font-size: 1rem;
+    }
+
+    .about_rightDiv .button a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about_rightDiv .about_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1210px) {
+    #about {
+        height: 100%;
+    }
+    #about .container .about_content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about_leftDiv, .about_rightDiv {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_rightDiv {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .about_rightDiv .about_title {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .icons img {
+        width: 75px;
+    }
+
+    .about_rightDiv .button a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about_leftDiv img {
+        width: 300px;
+        height: auto;
+    }
+
+    #about .container .title {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .about_title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about_rightDiv .about_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about_rightDiv .button a {
+        padding: 1rem;
+    }
+
+    .about_rightDiv .icons img {
+        width: 50px;
+    }
+
+    .about_rightDiv .button {
+        gap: 1rem;
+    }
+
+    .about_rightDiv .button a {
+        font-size: 1rem;
+    }
+}

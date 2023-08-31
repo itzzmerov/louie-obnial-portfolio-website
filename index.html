@@ -6,11 +6,114 @@
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
-    
+
     <title>Louie Vincent Obnial | Portfolio Website</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="assets/css/styles.css"><!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/navbar.css"><!-- NAVBAR CSS STYLES -->
+    <link rel="stylesheet" href="assets/css/hero.css"><!-- HERO CSS STYLES -->
+    <link rel="stylesheet" href="assets/css/about.css"><!-- ABOUT CSS STYLES -->
+
+    <!-- FONTAWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+
+    <!----------- NAVIGATION BAR / HEADER SECTION --------------->
+    <header id="main-header">
+        <div class="navbar">
+
+            <!-- LOGO HERE -->
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <ul class="links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- BURGER MENU -->
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <!-- DROPDOWN MENU (FOR RESPONSIVENESS) -->
+        <div class="dropdown_menu">
+
+            <!-- MENU LINKS -->
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="socials">
+                <a href="https://www.facebook.com/username" target="_blank"><i class="fa-brands fa-facebook" id="facebook"></i></a>
+                <a href="https://m.me/username" target="_blank"><i class="fa-brands fa-facebook-messenger" id="messenger"></i></a>
+                <a href="https://www.linkedin.com/in/username" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+            </div>
+        </div>   
+    </header> 
+
+    <!----------- HERO SECTION --------------->
+    <section id="hero">
+        <div class="container">
+
+            <div class="hero_left">
+                <p class="hero_welcome">Hi! My name is...</p>
+                <p class="hero_name">Louie Vincent Obnial</p>
+                <p class="hero_subname">A Graphic Artist & Journalist</p>
+                <p class="hero_paragraph">
+                    Welcome to my portfolio website! I'm a versatile creative professional, blending the worlds of graphic design and journalism to bring stories to life. With a passion for visual storytelling and a keen eye for design, I've embarked on a journey to create captivating narratives that resonate. Through this platform, I invite you to explore a curated collection of my work, where compelling visuals and impactful writing converge. Join me as I weave together words and images to craft engaging experiences that leave a lasting impression.
+                </p>
+                <div class="hero_buttons">
+                    <a href="#contact" id="contact_btn">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero_right">
+            </div>
+        </div>
+    </section>
+
+    <!----------- ABOUT SECTION --------------->
+    <section id="about">
+        <div class="container">
+            <h1 class="title">ABOUT ME</h1>
+
+            <div class="about_content">
+
+                <div class="about_leftDiv">
+                    <img src="assets/images/about.jpg" alt="Louie Vincent Obnial's picture">
+                </div>
+
+                <div class="about_rightDiv">
+                    <h2 class="about_title">Hi! My name is Louie Vincent M. Obnial</h2>
+                    <h2 class="about_subtitle">A Graphic Artist and Journalist.</h2>
+                    
+                    <p class="content">
+                        My journey into the world of web development began during my 3rd year of college when I delved into the exciting realm of creating web applications. As I progressed into my 4th year of college, my interest expanded to encompass mobile development alongside web development. This evolution culminated in a significant project where I played a pivotal role in designing and developing a web-based mobile application for real-time public emergency reporting and monitoring.
+                    </p>
+                    <br />
+                    <p class="content">
+                        I took the initiative to seek practical experience and growth by joining Algo Filipino as a web developer intern. As a valued member of the Web Team, I eagerly embraced coding challenges and work tasks, gaining invaluable insights into project management, website hosting, and version control through platforms like GitHub. Thank you for considering me for your web development endeavors. Let's collaborate and create something exceptional together!
+                    </p>
+
+                    <div class="button">
+                        <a href="resume.pdf" class="download-btn" download>Download CV</a>
+                        <a href="#contact" class="read_btn">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
