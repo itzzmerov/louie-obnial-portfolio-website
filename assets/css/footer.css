@@ -5,14 +5,14 @@ footer {
     font-family: var(--font-lato);
     color: var(--color-black);
     display: flex;
-    justify-content: space-between; /* Adjust alignment for two columns */
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
 }
 
 .footer_left {
-    flex: 1; /* Make left column take up available space */
-    text-align: left; /* Align text left in left column */
+    flex: 1;
+    text-align: left;
 }
 
 .footer_left .socials {
@@ -23,38 +23,44 @@ footer {
 }
 
 .footer_right {
-    flex: 1; /* Make right column take up available space */
-    text-align: right; /* Align text right in right column */
+    flex: 1;
+    text-align: right;
 }
 
-footer .copyright {
-    font-size: 1.2rem;
-}
-
-footer .developer {
-    font-size: 1.2rem;
-}
-
+footer .copyright,
+footer .developer,
 footer .developer a {
     font-size: 1.2rem;
-    color: var(--color-red);
-}
-
-footer .developer a:hover {
-    color: var(--color-red-variant);
 }
 
 /*********** FOOTER RESPONSIVENESS *************/
 @media (max-width: 576px) {
-    footer .copyright {
-        font-size: 1rem;
+    footer {
+        flex-direction: column; /* Change to column layout for mobile */
+        text-align: center; /* Center text for mobile */
     }
 
-    footer .developer {
-        font-size: 1rem;
+    .footer_left,
+    .footer_right {
+        flex: initial; /* Reset flex to default */
     }
 
+    .footer_left,
+    .footer_right,
+    footer .copyright,
+    footer .developer,
     footer .developer a {
-        font-size: 1rem;
+        text-align: center; /* Center text for mobile */
+        margin: 0.5rem 0; /* Add some spacing between elements for mobile */
+    }
+
+    .footer_left .socials {
+        justify-content: center; /* Center social icons horizontally for mobile */
+    }
+
+    footer .copyright,
+    footer .developer,
+    footer .developer a {
+        font-size: 1rem; /* Reduce font size for mobile */
     }
 }

@@ -27,7 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px; /* Adjust padding for smaller screens */
+    padding: 20px 20px;
+    margin-bottom: 2rem;
 }
 
 #contact .container:after{
