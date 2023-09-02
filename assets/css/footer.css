@@ -1,0 +1,60 @@
+@import url("styles.css");
+
+footer {
+    background-color: var(--color-white);
+    font-family: var(--font-lato);
+    color: var(--color-black);
+    display: flex;
+    justify-content: space-between; /* Adjust alignment for two columns */
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer_left {
+    flex: 1; /* Make left column take up available space */
+    text-align: left; /* Align text left in left column */
+}
+
+.footer_left .socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_right {
+    flex: 1; /* Make right column take up available space */
+    text-align: right; /* Align text right in right column */
+}
+
+footer .copyright {
+    font-size: 1.2rem;
+}
+
+footer .developer {
+    font-size: 1.2rem;
+}
+
+footer .developer a {
+    font-size: 1.2rem;
+    color: var(--color-red);
+}
+
+footer .developer a:hover {
+    color: var(--color-red-variant);
+}
+
+/*********** FOOTER RESPONSIVENESS *************/
+@media (max-width: 576px) {
+    footer .copyright {
+        font-size: 1rem;
+    }
+
+    footer .developer {
+        font-size: 1rem;
+    }
+
+    footer .developer a {
+        font-size: 1rem;
+    }
+}
